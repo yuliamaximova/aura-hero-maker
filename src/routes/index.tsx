@@ -179,7 +179,7 @@ function Index() {
           height={1200}
           className="absolute inset-0 h-full w-full object-cover opacity-30"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/0 via-background/60 to-background/90" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/40 to-background/80" />
 
         <div className="relative z-10">
           <div className="text-left">
@@ -284,9 +284,19 @@ function Index() {
       <section
         id="process"
         aria-label="Как я работаю"
-        className="relative mx-auto mt-16 max-w-6xl px-4 py-16 sm:px-6 lg:mt-24 lg:px-8 lg:py-24"
+        className="relative mx-auto mt-16 max-w-6xl overflow-hidden rounded-3xl px-4 py-16 sm:px-6 lg:mt-24 lg:px-8 lg:py-24"
       >
-        <div className="text-left">
+        <img
+          src={heroWaves}
+          alt=""
+          aria-hidden
+          width={1920}
+          height={1200}
+          className="absolute inset-0 h-full w-full object-cover opacity-20"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/40 to-background/80" />
+
+        <div className="relative z-10 text-left">
           <h2 className="text-4xl font-semibold tracking-tight text-foreground sm:text-5xl lg:text-6xl">
             Как я работаю
           </h2>
