@@ -1,5 +1,13 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Sparkles, ArrowUpRight, Clock, BarChart3, Rocket } from "lucide-react";
+import {
+  Sparkles,
+  ArrowUpRight,
+  Clock,
+  BarChart3,
+  Rocket,
+  Send,
+  Mail,
+} from "lucide-react";
 
 import heroWaves from "@/assets/hero-waves.jpg";
 import phone from "@/assets/phone.png";
@@ -324,6 +332,40 @@ function Index() {
                 </p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="contact"
+        aria-label="Связаться"
+        className="relative mx-auto mt-16 max-w-6xl overflow-hidden rounded-3xl border border-border bg-card px-4 py-16 text-center sm:px-6 lg:mt-24 lg:px-8 lg:py-24"
+      >
+        <div className="relative z-10 mx-auto max-w-2xl">
+          <h2 className="text-3xl font-semibold tracking-tight text-foreground sm:text-4xl lg:text-5xl">
+            Готовы воплотить Вашу идею в реальность?
+          </h2>
+          <p className="mx-auto mt-4 max-w-lg text-base leading-relaxed text-muted-foreground sm:text-lg">
+            Свяжитесь со мной, и мы обсудим Вашу задачу
+          </p>
+
+          <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
+            <a
+              href="https://t.me/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-lilac px-7 py-3.5 text-sm font-medium text-lilac-foreground transition-transform hover:scale-[1.03] sm:w-auto"
+            >
+              <Send className="h-4 w-4" />
+              Написать в Telegram
+            </a>
+            <a
+              href="mailto:"
+              className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-lilac px-7 py-3.5 text-sm font-medium text-lilac-foreground transition-transform hover:scale-[1.03] sm:w-auto"
+            >
+              <Mail className="h-4 w-4" />
+              Написать на Email
+            </a>
           </div>
         </div>
       </section>
