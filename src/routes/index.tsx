@@ -122,57 +122,69 @@ function Index() {
       <section
         id="projects"
         aria-label="Избранные проекты"
-        className="mx-auto mt-16 max-w-6xl px-4 sm:px-6 lg:mt-24 lg:px-8"
+        className="relative mx-auto mt-16 max-w-6xl overflow-hidden rounded-3xl px-4 py-16 sm:px-6 lg:mt-24 lg:px-8 lg:py-24"
       >
-        <div className="text-center">
-          <span className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-1.5 text-xs font-medium text-muted-foreground">
-            <Sparkles className="h-3.5 w-3.5 text-grape" />
-            Избранные проекты
-          </span>
-          <h2 className="mt-5 text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
-            Что я уже собрал
-          </h2>
-          <p className="mx-auto mt-4 max-w-xl text-base text-muted-foreground sm:text-lg">
-            Три примера продуктов, созданных с помощью AI-инструментов и
-            вайбкодинга
-          </p>
-        </div>
+        <img
+          src={heroWaves}
+          alt=""
+          aria-hidden
+          width={1920}
+          height={1200}
+          className="absolute inset-0 h-full w-full object-cover opacity-30"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/0 via-background/60 to-background/90" />
 
-        <div className="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:mt-14 lg:grid-cols-3">
-          {projects.map((project) => {
-            const Icon = project.icon;
-            return (
-              <article
-                key={project.id}
-                className="group flex flex-col rounded-3xl border border-border bg-card p-6 shadow-sm transition-all hover:-translate-y-1 hover:shadow-md sm:p-7"
-              >
-                <div
-                  className={`grid h-12 w-12 shrink-0 place-items-center rounded-2xl ${project.accent}`}
+        <div className="relative z-10">
+          <div className="text-center">
+            <span className="inline-flex items-center gap-2 rounded-full border border-border bg-card/80 px-4 py-1.5 text-xs font-medium text-muted-foreground backdrop-blur-sm">
+              <Sparkles className="h-3.5 w-3.5 text-grape" />
+              Избранные проекты
+            </span>
+            <h2 className="mt-5 text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
+              Что я уже собрал
+            </h2>
+            <p className="mx-auto mt-4 max-w-xl text-base text-muted-foreground sm:text-lg">
+              Три примера продуктов, созданных с помощью AI-инструментов и
+              вайбкодинга
+            </p>
+          </div>
+
+          <div className="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:mt-14 lg:grid-cols-3">
+            {projects.map((project) => {
+              const Icon = project.icon;
+              return (
+                <article
+                  key={project.id}
+                  className="group flex flex-col rounded-3xl border border-border bg-card/80 p-6 shadow-sm backdrop-blur-sm transition-all hover:-translate-y-1 hover:shadow-md sm:p-7"
                 >
-                  <Icon className="h-6 w-6" />
-                </div>
+                  <div
+                    className={`grid h-12 w-12 shrink-0 place-items-center rounded-2xl ${project.accent}`}
+                  >
+                    <Icon className="h-6 w-6" />
+                  </div>
 
-                <h3 className="mt-5 text-xl font-semibold tracking-tight text-foreground">
-                  {project.name}
-                </h3>
+                  <h3 className="mt-5 text-xl font-semibold tracking-tight text-foreground">
+                    {project.name}
+                  </h3>
 
-                <p className="mt-3 flex-grow text-sm leading-relaxed text-muted-foreground sm:text-base">
-                  {project.description}
-                </p>
+                  <p className="mt-3 flex-grow text-sm leading-relaxed text-muted-foreground sm:text-base">
+                    {project.description}
+                  </p>
 
-                <div className="mt-6 flex flex-wrap gap-2">
-                  {project.tags.map((tag) => (
-                    <span
-                      key={tag}
-                      className="rounded-full border border-border bg-background px-3 py-1 text-xs font-medium text-foreground"
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-              </article>
-            );
-          })}
+                  <div className="mt-6 flex flex-wrap gap-2">
+                    {project.tags.map((tag) => (
+                      <span
+                        key={tag}
+                        className="rounded-full border border-border bg-background/80 px-3 py-1 text-xs font-medium text-foreground"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                </article>
+              );
+            })}
+          </div>
         </div>
       </section>
     </main>
