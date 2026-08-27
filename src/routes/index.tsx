@@ -105,7 +105,7 @@ const services = [
 
 function Index() {
   return (
-    <main className="min-h-screen bg-background p-3 sm:p-5 lg:p-8">
+    <main className="min-h-screen bg-gradient-to-b from-lilac/25 via-background to-lilac/25 p-3 sm:p-5 lg:p-8">
       <section
         aria-label="Hero"
         className="relative mx-auto flex min-h-[calc(100vh-1.5rem)] max-w-6xl items-center overflow-hidden rounded-3xl sm:min-h-[calc(100vh-2.5rem)] lg:min-h-[calc(100vh-4rem)]"
@@ -230,9 +230,19 @@ function Index() {
       <section
         id="services"
         aria-label="Что я делаю"
-        className="relative mx-auto mt-16 max-w-6xl px-4 py-16 sm:px-6 lg:mt-24 lg:px-8 lg:py-24"
+        className="relative mx-auto mt-16 max-w-6xl overflow-hidden rounded-3xl px-4 py-16 sm:px-6 lg:mt-24 lg:px-8 lg:py-24"
       >
-        <div className="text-left">
+        <img
+          src={heroWaves}
+          alt=""
+          aria-hidden
+          width={1920}
+          height={1200}
+          className="absolute inset-0 h-full w-full object-cover opacity-20"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/40 to-background/80" />
+
+        <div className="relative z-10 text-left">
           <h2 className="text-4xl font-semibold tracking-tight text-foreground sm:text-5xl lg:text-6xl">
             Что я делаю
           </h2>
