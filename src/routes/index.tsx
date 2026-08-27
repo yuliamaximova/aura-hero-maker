@@ -361,6 +361,16 @@ function Index() {
         aria-label="Связаться"
         className="relative mx-auto mt-16 max-w-6xl overflow-hidden rounded-3xl border border-border bg-card px-4 py-16 text-center sm:px-6 lg:mt-24 lg:px-8 lg:py-24"
       >
+        <img
+          src={heroWaves}
+          alt=""
+          aria-hidden
+          width={1920}
+          height={1200}
+          className="absolute inset-0 h-full w-full object-cover opacity-25"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-card/70 via-card/40 to-card/70" />
+
         <div className="relative z-10 mx-auto max-w-2xl">
           <h2 className="text-3xl font-semibold tracking-tight text-foreground sm:text-4xl lg:text-5xl">
             Готовы воплотить Вашу идею в реальность?
