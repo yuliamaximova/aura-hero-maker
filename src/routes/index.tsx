@@ -56,6 +56,45 @@ const projects = [
   },
 ];
 
+const services = [
+  {
+    id: "mvp",
+    title: "MVP за неделю",
+    description:
+      "Превращаю идею в работающий продукт за 5–7 дней. Без долгих согласований и переписываний ТЗ.",
+    result: "Готовый прототип для теста гипотез",
+    icon: "⚡",
+    accent: "bg-lilac text-lilac-foreground",
+  },
+  {
+    id: "ai-automation",
+    title: "AI-автоматизация",
+    description:
+      "Встраиваю нейросети в рабочие процессы: от генерации контента до анализа данных и поддержки клиентов.",
+    result: "Экономия времени команды на рутине",
+    icon: "🤖",
+    accent: "bg-grape text-grape-foreground",
+  },
+  {
+    id: "ui-ux",
+    title: "UI/UX с вайбкодингом",
+    description:
+      "Создаю интерфейсы, которые выглядят дорого и работают быстро. Современные анимации и чистая типографика.",
+    result: "Понятный и запоминающийся дизайн",
+    icon: "🎨",
+    accent: "bg-lilac text-lilac-foreground",
+  },
+  {
+    id: "integrations",
+    title: "Интеграции",
+    description:
+      "Соединяю сервисы между собой: CRM, платежи, мессенджеры, базы данных и внешние API.",
+    result: "Единая экосистема без ручного дублирования",
+    icon: "🔌",
+    accent: "bg-grape text-grape-foreground",
+  },
+];
+
 function Index() {
   return (
     <main className="min-h-screen bg-background p-3 sm:p-5 lg:p-8">
@@ -116,6 +155,50 @@ function Index() {
               className="w-64 max-w-full mix-blend-multiply drop-shadow-2xl sm:w-80 lg:w-[26rem]"
             />
           </div>
+        </div>
+      </section>
+
+      <section
+        id="services"
+        aria-label="Что я делаю"
+        className="relative mx-auto mt-16 max-w-6xl px-4 py-16 sm:px-6 lg:mt-24 lg:px-8 lg:py-24"
+      >
+        <div className="text-left">
+          <h2 className="text-4xl font-semibold tracking-tight text-foreground sm:text-5xl lg:text-6xl">
+            Что я делаю
+          </h2>
+        </div>
+
+        <div className="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:mt-14 lg:grid-cols-4">
+          {services.map((service) => (
+            <article
+              key={service.id}
+              className="group flex flex-col rounded-3xl border border-border bg-card p-6 shadow-sm transition-all hover:-translate-y-1 hover:shadow-md sm:p-7"
+            >
+              <div
+                className={`grid h-12 w-12 shrink-0 place-items-center rounded-2xl text-xl ${service.accent}`}
+              >
+                {service.icon}
+              </div>
+
+              <h3 className="mt-5 text-xl font-semibold tracking-tight text-foreground">
+                {service.title}
+              </h3>
+
+              <p className="mt-3 flex-grow text-sm leading-relaxed text-muted-foreground sm:text-base">
+                {service.description}
+              </p>
+
+              <div className="mt-6 rounded-2xl bg-background/80 p-4">
+                <p className="text-xs font-medium uppercase tracking-wide text-muted-foreground">
+                  Ключевой результат
+                </p>
+                <p className="mt-1 text-sm font-medium text-foreground">
+                  {service.result}
+                </p>
+              </div>
+            </article>
+          ))}
         </div>
       </section>
 
