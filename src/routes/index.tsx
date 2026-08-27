@@ -262,6 +262,71 @@ function Index() {
           </div>
         </div>
       </section>
+
+      <section
+        id="process"
+        aria-label="Как я работаю"
+        className="relative mx-auto mt-16 max-w-6xl px-4 py-16 sm:px-6 lg:mt-24 lg:px-8 lg:py-24"
+      >
+        <div className="text-left">
+          <h2 className="text-4xl font-semibold tracking-tight text-foreground sm:text-5xl lg:text-6xl">
+            Как я работаю
+          </h2>
+        </div>
+
+        <div className="relative mt-10 lg:mt-14">
+          <div className="absolute left-8 top-0 bottom-0 w-px bg-border lg:left-0 lg:right-0 lg:top-14 lg:bottom-auto lg:h-px lg:w-full" />
+
+          <div className="relative grid grid-cols-1 gap-8 lg:grid-cols-4">
+            {[
+              {
+                step: "01",
+                title: "Погружаюсь в задачу",
+                description:
+                  "Обсуждаю цели, аудиторию и ограничения. Формирую чёткое понимание, что должно получиться на выходе.",
+              },
+              {
+                step: "02",
+                title: "Создаю с ИИ",
+                description:
+                  "Быстро прототипирую интерфейсы и логику с помощью современных AI-инструментов, сохраняя качество и внимание к деталям.",
+              },
+              {
+                step: "03",
+                title: "Тестирую и улучшаю",
+                description:
+                  "Проверяю работу на реальных сценариях, собираю обратную связь и довожу продукт до удобного состояния.",
+              },
+              {
+                step: "04",
+                title: "Запускаю и масштабирую",
+                description:
+                  "Вывожу проект в прод, настраиваю интеграции и помогаю развивать продукт дальше.",
+              },
+            ].map((item) => (
+              <div key={item.step} className="relative pl-20 lg:pl-0 lg:pt-20">
+                <div
+                  className={`absolute left-0 top-0 grid h-16 w-16 shrink-0 place-items-center rounded-2xl text-lg font-semibold lg:left-0 lg:right-auto lg:top-0 ${
+                    Number(item.step) % 2 === 1
+                      ? "bg-lilac text-lilac-foreground"
+                      : "bg-grape text-grape-foreground"
+                  }`}
+                >
+                  {item.step}
+                </div>
+
+                <h3 className="text-xl font-semibold tracking-tight text-foreground">
+                  {item.title}
+                </h3>
+
+                <p className="mt-3 text-sm leading-relaxed text-muted-foreground sm:text-base">
+                  {item.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
