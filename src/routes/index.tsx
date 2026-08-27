@@ -238,7 +238,7 @@ function Index() {
           aria-hidden
           width={1920}
           height={1200}
-          className="absolute inset-0 h-full w-full object-cover opacity-20"
+          className="absolute inset-0 h-full w-full object-cover opacity-30"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/40 to-background/80" />
 
@@ -252,7 +252,7 @@ function Index() {
           {services.map((service) => (
             <article
               key={service.id}
-              className="group flex flex-col rounded-3xl border border-border bg-card p-6 shadow-sm transition-all hover:-translate-y-1 hover:shadow-md sm:p-7"
+              className="group flex flex-col rounded-3xl border border-border bg-card/80 p-6 shadow-sm backdrop-blur-sm transition-all hover:-translate-y-1 hover:shadow-md sm:p-7"
             >
               <div
                 className={`grid h-12 w-12 shrink-0 place-items-center rounded-2xl text-xl ${service.accent}`}
