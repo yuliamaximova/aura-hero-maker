@@ -351,7 +351,7 @@ function Index() {
 
           <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
             <a
-              href="https://t.me/"
+              href="https://t.me/yulamax"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-lilac px-7 py-3.5 text-sm font-medium text-lilac-foreground transition-transform hover:scale-[1.03] sm:w-auto"
@@ -360,7 +360,7 @@ function Index() {
               Написать в Telegram
             </a>
             <a
-              href="mailto:"
+              href="mailto:yulasemenova2501@icloud.com"
               className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-lilac px-7 py-3.5 text-sm font-medium text-lilac-foreground transition-transform hover:scale-[1.03] sm:w-auto"
             >
               <Mail className="h-4 w-4" />
