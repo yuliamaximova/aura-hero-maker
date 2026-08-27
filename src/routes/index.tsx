@@ -136,17 +136,9 @@ function Index() {
 
         <div className="relative z-10">
           <div className="text-left">
-            <span className="inline-flex items-center gap-2 rounded-full border border-border bg-card/80 px-4 py-1.5 text-xs font-medium text-muted-foreground backdrop-blur-sm">
-              <Sparkles className="h-3.5 w-3.5 text-grape" />
+            <h2 className="text-4xl font-semibold tracking-tight text-foreground sm:text-5xl lg:text-6xl">
               Избранные проекты
-            </span>
-            <h2 className="mt-5 text-4xl font-semibold tracking-tight text-foreground sm:text-5xl lg:text-6xl">
-              Что я уже собрал
             </h2>
-            <p className="mt-4 max-w-xl text-base text-muted-foreground sm:text-lg">
-              Три примера продуктов, созданных с помощью AI-инструментов и
-              вайбкодинга
-            </p>
           </div>
 
           <div className="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:mt-14 lg:grid-cols-3">
