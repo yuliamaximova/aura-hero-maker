@@ -56,6 +56,45 @@ const projects = [
   },
 ];
 
+const services = [
+  {
+    id: "mvp",
+    title: "MVP за неделю",
+    description:
+      "Превращаю идею в работающий продукт за 5–7 дней. Без долгих согласований и переписываний ТЗ.",
+    result: "Готовый прототип для теста гипотез",
+    icon: "⚡",
+    accent: "bg-lilac text-lilac-foreground",
+  },
+  {
+    id: "ai-automation",
+    title: "AI-автоматизация",
+    description:
+      "Встраиваю нейросети в рабочие процессы: от генерации контента до анализа данных и поддержки клиентов.",
+    result: "Экономия времени команды на рутине",
+    icon: "🤖",
+    accent: "bg-grape text-grape-foreground",
+  },
+  {
+    id: "ui-ux",
+    title: "UI/UX с вайбкодингом",
+    description:
+      "Создаю интерфейсы, которые выглядят дорого и работают быстро. Современные анимации и чистая типографика.",
+    result: "Понятный и запоминающийся дизайн",
+    icon: "🎨",
+    accent: "bg-lilac text-lilac-foreground",
+  },
+  {
+    id: "integrations",
+    title: "Интеграции",
+    description:
+      "Соединяю сервисы между собой: CRM, платежи, мессенджеры, базы данных и внешние API.",
+    result: "Единая экосистема без ручного дублирования",
+    icon: "🔌",
+    accent: "bg-grape text-grape-foreground",
+  },
+];
+
 function Index() {
   return (
     <main className="min-h-screen bg-background p-3 sm:p-5 lg:p-8">
