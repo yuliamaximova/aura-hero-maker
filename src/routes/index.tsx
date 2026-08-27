@@ -159,50 +159,6 @@ function Index() {
       </section>
 
       <section
-        id="services"
-        aria-label="Что я делаю"
-        className="relative mx-auto mt-16 max-w-6xl px-4 py-16 sm:px-6 lg:mt-24 lg:px-8 lg:py-24"
-      >
-        <div className="text-left">
-          <h2 className="text-4xl font-semibold tracking-tight text-foreground sm:text-5xl lg:text-6xl">
-            Что я делаю
-          </h2>
-        </div>
-
-        <div className="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:mt-14 lg:grid-cols-4">
-          {services.map((service) => (
-            <article
-              key={service.id}
-              className="group flex flex-col rounded-3xl border border-border bg-card p-6 shadow-sm transition-all hover:-translate-y-1 hover:shadow-md sm:p-7"
-            >
-              <div
-                className={`grid h-12 w-12 shrink-0 place-items-center rounded-2xl text-xl ${service.accent}`}
-              >
-                {service.icon}
-              </div>
-
-              <h3 className="mt-5 text-xl font-semibold tracking-tight text-foreground">
-                {service.title}
-              </h3>
-
-              <p className="mt-3 flex-grow text-sm leading-relaxed text-muted-foreground sm:text-base">
-                {service.description}
-              </p>
-
-              <div className="mt-6 rounded-2xl bg-background/80 p-4">
-                <p className="text-xs font-medium uppercase tracking-wide text-muted-foreground">
-                  Ключевой результат
-                </p>
-                <p className="mt-1 text-sm font-medium text-foreground">
-                  {service.result}
-                </p>
-              </div>
-            </article>
-          ))}
-        </div>
-      </section>
-
-      <section
         id="projects"
         aria-label="Избранные проекты"
         className="relative mx-auto mt-16 max-w-6xl overflow-hidden rounded-3xl px-4 py-16 sm:px-6 lg:mt-24 lg:px-8 lg:py-24"
@@ -260,6 +216,50 @@ function Index() {
               );
             })}
           </div>
+        </div>
+      </section>
+
+      <section
+        id="services"
+        aria-label="Что я делаю"
+        className="relative mx-auto mt-16 max-w-6xl px-4 py-16 sm:px-6 lg:mt-24 lg:px-8 lg:py-24"
+      >
+        <div className="text-left">
+          <h2 className="text-4xl font-semibold tracking-tight text-foreground sm:text-5xl lg:text-6xl">
+            Что я делаю
+          </h2>
+        </div>
+
+        <div className="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:mt-14 lg:grid-cols-4">
+          {services.map((service) => (
+            <article
+              key={service.id}
+              className="group flex flex-col rounded-3xl border border-border bg-card p-6 shadow-sm transition-all hover:-translate-y-1 hover:shadow-md sm:p-7"
+            >
+              <div
+                className={`grid h-12 w-12 shrink-0 place-items-center rounded-2xl text-xl ${service.accent}`}
+              >
+                {service.icon}
+              </div>
+
+              <h3 className="mt-5 text-xl font-semibold tracking-tight text-foreground">
+                {service.title}
+              </h3>
+
+              <p className="mt-3 flex-grow text-sm leading-relaxed text-muted-foreground sm:text-base">
+                {service.description}
+              </p>
+
+              <div className="mt-6 rounded-2xl bg-background/80 p-4">
+                <p className="text-xs font-medium uppercase tracking-wide text-muted-foreground">
+                  Ключевой результат
+                </p>
+                <p className="mt-1 text-sm font-medium text-foreground">
+                  {service.result}
+                </p>
+              </div>
+            </article>
+          ))}
         </div>
       </section>
 
