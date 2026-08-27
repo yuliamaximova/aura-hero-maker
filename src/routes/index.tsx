@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Sparkles, ArrowUpRight } from "lucide-react";
+import { Sparkles, ArrowUpRight, Clock, BarChart3, Rocket } from "lucide-react";
 
 import heroWaves from "@/assets/hero-waves.jpg";
 import phone from "@/assets/phone.png";
@@ -25,6 +25,36 @@ export const Route = createFileRoute("/")({
   }),
   component: Index,
 });
+
+const projects = [
+  {
+    id: "time2take",
+    name: "Time2Take",
+    description:
+      "Веб-приложение для отслеживания приёма лекарств. Напоминания, история доз и удобный график приёма.",
+    tags: ["React", "TypeScript", "Supabase", "Tailwind"],
+    icon: Clock,
+    accent: "bg-lilac text-lilac-foreground",
+  },
+  {
+    id: "proanalytics",
+    name: "ProАналитику",
+    description:
+      "AI-сервис для анализа данных. Автоматические инсайты, визуализация метрик и прогнозирование трендов.",
+    tags: ["Next.js", "OpenAI", "Python", "Recharts"],
+    icon: BarChart3,
+    accent: "bg-grape text-grape-foreground",
+  },
+  {
+    id: "nofear",
+    name: "NoFear",
+    description:
+      "Лендинг для онлайн-курса по выходу из зоны комфорта. Конверсионная структура, анимации и формы захвата.",
+    tags: ["Astro", "Motion", "Figma", "Vercel"],
+    icon: Rocket,
+    accent: "bg-lilac text-lilac-foreground",
+  },
+];
 
 function Index() {
   return (
@@ -86,6 +116,63 @@ function Index() {
               className="w-64 max-w-full mix-blend-multiply drop-shadow-2xl sm:w-80 lg:w-[26rem]"
             />
           </div>
+        </div>
+      </section>
+
+      <section
+        id="projects"
+        aria-label="Избранные проекты"
+        className="mx-auto mt-16 max-w-6xl px-4 sm:px-6 lg:mt-24 lg:px-8"
+      >
+        <div className="text-center">
+          <span className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-1.5 text-xs font-medium text-muted-foreground">
+            <Sparkles className="h-3.5 w-3.5 text-grape" />
+            Избранные проекты
+          </span>
+          <h2 className="mt-5 text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
+            Что я уже собрал
+          </h2>
+          <p className="mx-auto mt-4 max-w-xl text-base text-muted-foreground sm:text-lg">
+            Три примера продуктов, созданных с помощью AI-инструментов и
+            вайбкодинга
+          </p>
+        </div>
+
+        <div className="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:mt-14 lg:grid-cols-3">
+          {projects.map((project) => {
+            const Icon = project.icon;
+            return (
+              <article
+                key={project.id}
+                className="group flex flex-col rounded-3xl border border-border bg-card p-6 shadow-sm transition-all hover:-translate-y-1 hover:shadow-md sm:p-7"
+              >
+                <div
+                  className={`grid h-12 w-12 shrink-0 place-items-center rounded-2xl ${project.accent}`}
+                >
+                  <Icon className="h-6 w-6" />
+                </div>
+
+                <h3 className="mt-5 text-xl font-semibold tracking-tight text-foreground">
+                  {project.name}
+                </h3>
+
+                <p className="mt-3 flex-grow text-sm leading-relaxed text-muted-foreground sm:text-base">
+                  {project.description}
+                </p>
+
+                <div className="mt-6 flex flex-wrap gap-2">
+                  {project.tags.map((tag) => (
+                    <span
+                      key={tag}
+                      className="rounded-full border border-border bg-background px-3 py-1 text-xs font-medium text-foreground"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </article>
+            );
+          })}
         </div>
       </section>
     </main>
