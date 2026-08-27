@@ -135,15 +135,15 @@ function Index() {
         <div className="absolute inset-0 bg-gradient-to-b from-background/0 via-background/60 to-background/90" />
 
         <div className="relative z-10">
-          <div className="text-center">
+          <div className="text-left">
             <span className="inline-flex items-center gap-2 rounded-full border border-border bg-card/80 px-4 py-1.5 text-xs font-medium text-muted-foreground backdrop-blur-sm">
               <Sparkles className="h-3.5 w-3.5 text-grape" />
               Избранные проекты
             </span>
-            <h2 className="mt-5 text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
+            <h2 className="mt-5 text-4xl font-semibold tracking-tight text-foreground sm:text-5xl lg:text-6xl">
               Что я уже собрал
             </h2>
-            <p className="mx-auto mt-4 max-w-xl text-base text-muted-foreground sm:text-lg">
+            <p className="mt-4 max-w-xl text-base text-muted-foreground sm:text-lg">
               Три примера продуктов, созданных с помощью AI-инструментов и
               вайбкодинга
             </p>
