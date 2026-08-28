@@ -230,7 +230,7 @@ function Index() {
       <section
         id="services"
         aria-label="Что я делаю"
-        className="relative mx-auto mt-12 max-w-6xl overflow-hidden rounded-3xl px-6 py-12 sm:px-8 lg:mt-20 lg:px-12 lg:py-16"
+        className="relative mx-auto mt-12 max-w-6xl overflow-hidden rounded-3xl px-6 py-10 sm:px-8 lg:mt-20 lg:px-12 lg:py-14"
       >
         <img
           src={heroWaves}
