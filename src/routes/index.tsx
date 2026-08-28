@@ -105,10 +105,10 @@ const services = [
 
 function Index() {
   return (
-    <main className="min-h-screen bg-gradient-to-b from-lilac/25 via-background to-lilac/25 p-3 sm:p-5 lg:p-8">
+    <main className="min-h-screen bg-gradient-to-b from-lilac/25 via-background to-lilac/25 px-4 py-4 sm:px-6 sm:py-6 lg:px-8 lg:py-8">
       <section
         aria-label="Hero"
-        className="relative mx-auto flex min-h-[calc(100vh-1.5rem)] max-w-6xl items-center overflow-hidden rounded-3xl sm:min-h-[calc(100vh-2.5rem)] lg:min-h-[calc(100vh-4rem)]"
+        className="relative mx-auto flex min-h-[60vh] max-w-6xl items-center overflow-hidden rounded-3xl sm:min-h-[65vh] lg:min-h-[70vh]"
       >
         <img
           src={heroWaves}
@@ -119,7 +119,7 @@ function Index() {
           className="absolute inset-0 h-full w-full object-cover"
         />
 
-        <div className="relative z-10 grid w-full grid-cols-1 items-center gap-10 px-6 py-16 sm:px-10 lg:grid-cols-2 lg:gap-6 lg:px-16">
+        <div className="relative z-10 grid w-full grid-cols-1 items-center gap-10 px-6 py-10 sm:px-8 lg:grid-cols-2 lg:gap-8 lg:px-12 lg:py-14">
           <div className="max-w-xl text-center lg:text-left">
             <span className="inline-flex items-center gap-2 rounded-full border border-border bg-card/70 px-4 py-1.5 text-xs font-medium text-foreground backdrop-blur-sm">
               <Sparkles className="h-3.5 w-3.5 text-grape" />
@@ -169,7 +169,7 @@ function Index() {
       <section
         id="projects"
         aria-label="Избранные проекты"
-        className="relative mx-auto mt-12 max-w-6xl overflow-hidden rounded-3xl px-4 py-12 sm:px-6 lg:mt-20 lg:px-8 lg:py-16"
+        className="relative mx-auto mt-12 max-w-6xl overflow-hidden rounded-3xl px-6 py-10 sm:px-8 lg:mt-20 lg:px-12 lg:py-14"
       >
         <img
           src={heroWaves}
@@ -230,7 +230,7 @@ function Index() {
       <section
         id="services"
         aria-label="Что я делаю"
-        className="relative mx-auto mt-12 max-w-6xl overflow-hidden rounded-3xl px-4 py-12 sm:px-6 lg:mt-20 lg:px-8 lg:py-16"
+        className="relative mx-auto mt-12 max-w-6xl overflow-hidden rounded-3xl px-6 py-10 sm:px-8 lg:mt-20 lg:px-12 lg:py-14"
       >
         <img
           src={heroWaves}
@@ -284,7 +284,7 @@ function Index() {
       <section
         id="process"
         aria-label="Как я работаю"
-        className="relative mx-auto mt-12 max-w-6xl overflow-hidden rounded-3xl px-4 py-12 sm:px-6 lg:mt-20 lg:px-8 lg:py-16"
+        className="relative mx-auto mt-12 max-w-6xl overflow-hidden rounded-3xl px-6 py-10 sm:px-8 lg:mt-20 lg:px-12 lg:py-14"
       >
         <img
           src={heroWaves}
@@ -302,10 +302,10 @@ function Index() {
           </h2>
         </div>
 
-        <div className="relative mt-10 lg:mt-14">
-          <div className="absolute left-8 top-0 bottom-0 w-px bg-border lg:left-0 lg:right-0 lg:top-14 lg:bottom-auto lg:h-px lg:w-full" />
+        <div className="relative mt-10 lg:mt-12">
+          <div className="absolute left-8 top-0 bottom-0 w-px bg-border lg:left-0 lg:right-0 lg:top-12 lg:bottom-auto lg:h-px lg:w-full" />
 
-          <div className="relative grid grid-cols-1 gap-8 lg:grid-cols-4">
+          <div className="relative grid grid-cols-1 gap-6 lg:grid-cols-4">
             {[
               {
                 step: "01",
@@ -332,7 +332,7 @@ function Index() {
                   "Запускаю проект и помогаю масштабировать то, что работает.",
               },
             ].map((item) => (
-              <div key={item.step} className="relative pl-20 lg:pl-0 lg:pt-20">
+              <div key={item.step} className="relative pl-20 lg:pl-0 lg:pt-16">
                 <div
                   className={`absolute left-0 top-0 grid h-16 w-16 shrink-0 place-items-center rounded-2xl text-lg font-semibold lg:left-0 lg:right-auto lg:top-0 ${
                     Number(item.step) % 2 === 1
@@ -359,7 +359,7 @@ function Index() {
       <section
         id="contact"
         aria-label="Связаться"
-        className="relative mx-auto mt-12 max-w-6xl overflow-hidden rounded-3xl border border-border bg-card px-4 py-16 text-center sm:px-6 lg:mt-20 lg:px-8 lg:py-24"
+        className="relative mx-auto mt-12 max-w-6xl overflow-hidden rounded-3xl border border-border bg-card px-6 py-10 text-center sm:px-8 lg:mt-20 lg:px-12 lg:py-14"
       >
         <img
           src={heroWaves}
