@@ -332,7 +332,7 @@ function Index() {
                   "Запускаю проект и помогаю масштабировать то, что работает.",
               },
             ].map((item) => (
-              <div key={item.step} className="relative pl-20 lg:pl-0 lg:pt-20">
+              <div key={item.step} className="relative pl-20 lg:pl-0 lg:pt-16">
                 <div
                   className={`absolute left-0 top-0 grid h-16 w-16 shrink-0 place-items-center rounded-2xl text-lg font-semibold lg:left-0 lg:right-auto lg:top-0 ${
                     Number(item.step) % 2 === 1
