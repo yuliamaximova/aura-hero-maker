@@ -105,10 +105,10 @@ const services = [
 
 function Index() {
   return (
-    <main className="min-h-screen bg-gradient-to-b from-lilac/25 via-background to-lilac/25 p-3 sm:p-5 lg:p-8">
+    <main className="min-h-screen bg-gradient-to-b from-lilac/25 via-background to-lilac/25 px-4 py-4 sm:px-6 sm:py-6 lg:px-8 lg:py-8">
       <section
         aria-label="Hero"
-        className="relative mx-auto flex min-h-[calc(100vh-1.5rem)] max-w-6xl items-center overflow-hidden rounded-3xl sm:min-h-[calc(100vh-2.5rem)] lg:min-h-[calc(100vh-4rem)]"
+        className="relative mx-auto flex min-h-[80vh] max-w-6xl items-center overflow-hidden rounded-3xl sm:min-h-[85vh] lg:min-h-[90vh]"
       >
         <img
           src={heroWaves}
