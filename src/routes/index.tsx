@@ -359,7 +359,7 @@ function Index() {
       <section
         id="contact"
         aria-label="Связаться"
-        className="relative mx-auto mt-12 max-w-6xl overflow-hidden rounded-3xl border border-border bg-card px-4 py-16 text-center sm:px-6 lg:mt-20 lg:px-8 lg:py-24"
+        className="relative mx-auto mt-12 max-w-6xl overflow-hidden rounded-3xl border border-border bg-card px-6 py-12 text-center sm:px-8 lg:mt-20 lg:px-12 lg:py-16"
       >
         <img
           src={heroWaves}
