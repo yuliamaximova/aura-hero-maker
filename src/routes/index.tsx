@@ -119,7 +119,7 @@ function Index() {
           className="absolute inset-0 h-full w-full object-cover"
         />
 
-        <div className="relative z-10 grid w-full grid-cols-1 items-center gap-10 px-6 py-12 sm:px-8 lg:grid-cols-2 lg:gap-8 lg:px-12 lg:py-16">
+        <div className="relative z-10 grid w-full grid-cols-1 items-center gap-10 px-6 py-10 sm:px-8 lg:grid-cols-2 lg:gap-8 lg:px-12 lg:py-14">
           <div className="max-w-xl text-center lg:text-left">
             <span className="inline-flex items-center gap-2 rounded-full border border-border bg-card/70 px-4 py-1.5 text-xs font-medium text-foreground backdrop-blur-sm">
               <Sparkles className="h-3.5 w-3.5 text-grape" />
