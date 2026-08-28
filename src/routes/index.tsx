@@ -169,7 +169,7 @@ function Index() {
       <section
         id="projects"
         aria-label="Избранные проекты"
-        className="relative mx-auto mt-16 max-w-6xl overflow-hidden rounded-3xl px-4 py-16 sm:px-6 lg:mt-24 lg:px-8 lg:py-24"
+        className="relative mx-auto mt-16 max-w-6xl overflow-hidden rounded-3xl px-4 py-12 sm:px-6 lg:mt-24 lg:px-8 lg:py-16"
       >
         <img
           src={heroWaves}
@@ -230,7 +230,7 @@ function Index() {
       <section
         id="services"
         aria-label="Что я делаю"
-        className="relative mx-auto mt-16 max-w-6xl overflow-hidden rounded-3xl px-4 py-16 sm:px-6 lg:mt-24 lg:px-8 lg:py-24"
+        className="relative mx-auto mt-16 max-w-6xl overflow-hidden rounded-3xl px-4 py-12 sm:px-6 lg:mt-24 lg:px-8 lg:py-16"
       >
         <img
           src={heroWaves}
@@ -284,7 +284,7 @@ function Index() {
       <section
         id="process"
         aria-label="Как я работаю"
-        className="relative mx-auto mt-16 max-w-6xl overflow-hidden rounded-3xl px-4 py-16 sm:px-6 lg:mt-24 lg:px-8 lg:py-24"
+        className="relative mx-auto mt-16 max-w-6xl overflow-hidden rounded-3xl px-4 py-12 sm:px-6 lg:mt-24 lg:px-8 lg:py-16"
       >
         <img
           src={heroWaves}
