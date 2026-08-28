@@ -139,14 +139,14 @@ function Index() {
             <div className="mt-8 flex flex-col items-center gap-3 sm:flex-row sm:justify-center lg:justify-start">
               <a
                 href="#projects"
-                className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-lilac px-7 py-3.5 text-sm font-medium text-lilac-foreground transition-transform hover:scale-[1.03] hover:-translate-y-1 sm:w-auto"
+                className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-lilac px-7 py-3.5 text-sm font-medium text-lilac-foreground transition-transform hover:scale-[1.03] md:hover:-translate-y-1 sm:w-auto"
               >
                 Посмотреть проекты
                 <ArrowUpRight className="h-4 w-4" />
               </a>
               <a
                 href="#contact"
-                className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-grape px-7 py-3.5 text-sm font-medium text-grape-foreground transition-transform hover:scale-[1.03] hover:-translate-y-1 sm:w-auto"
+                className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-grape px-7 py-3.5 text-sm font-medium text-grape-foreground transition-transform hover:scale-[1.03] md:hover:-translate-y-1 sm:w-auto"
               >
                 Связаться
                 <ArrowUpRight className="h-4 w-4" />
