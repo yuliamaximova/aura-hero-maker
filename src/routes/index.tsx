@@ -302,10 +302,10 @@ function Index() {
           </h2>
         </div>
 
-        <div className="relative mt-10 lg:mt-14">
-          <div className="absolute left-8 top-0 bottom-0 w-px bg-border lg:left-0 lg:right-0 lg:top-14 lg:bottom-auto lg:h-px lg:w-full" />
+        <div className="relative mt-10 lg:mt-12">
+          <div className="absolute left-8 top-0 bottom-0 w-px bg-border lg:left-0 lg:right-0 lg:top-12 lg:bottom-auto lg:h-px lg:w-full" />
 
-          <div className="relative grid grid-cols-1 gap-8 lg:grid-cols-4">
+          <div className="relative grid grid-cols-1 gap-6 lg:grid-cols-4">
             {[
               {
                 step: "01",
