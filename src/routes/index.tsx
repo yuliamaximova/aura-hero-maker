@@ -105,7 +105,7 @@ const services = [
 
 function Index() {
   return (
-    <main className="min-h-screen bg-gradient-to-b from-lilac/25 via-background to-lilac/25 px-4 py-4 sm:px-6 sm:py-6 lg:px-8 lg:py-8">
+    <main className="min-h-screen bg-gradient-to-b from-lilac/60 via-lilac/25 to-lilac/60 px-4 py-4 sm:px-6 sm:py-6 lg:px-8 lg:py-8">
       <section
         aria-label="Hero"
         className="relative mx-auto flex min-h-[60vh] max-w-6xl items-center overflow-hidden rounded-3xl sm:min-h-[65vh] lg:min-h-[70vh]"
