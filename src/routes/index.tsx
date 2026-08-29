@@ -105,7 +105,7 @@ const services = [
 
 function Index() {
   return (
-    <main className="min-h-screen bg-gradient-to-b from-lilac/25 via-background to-lilac/25 px-4 py-4 sm:px-6 sm:py-6 lg:px-8 lg:py-8">
+    <main className="min-h-screen bg-gradient-to-b from-lilac/60 via-lilac/25 to-lilac/60 px-4 py-4 sm:px-6 sm:py-6 lg:px-8 lg:py-8">
       <section
         aria-label="Hero"
         className="relative mx-auto flex min-h-[60vh] max-w-6xl items-center overflow-hidden rounded-3xl sm:min-h-[65vh] lg:min-h-[70vh]"
@@ -183,9 +183,9 @@ function Index() {
           height={1200}
           loading="lazy"
           decoding="async"
-          className="absolute inset-0 h-full w-full object-cover opacity-30"
+          className="absolute inset-0 h-full w-full object-cover opacity-50"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/40 to-background/80" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/20 to-background/60" />
 
         <div className="relative z-10">
           <div className="text-left">
@@ -246,9 +246,9 @@ function Index() {
           height={1200}
           loading="lazy"
           decoding="async"
-          className="absolute inset-0 h-full w-full object-cover opacity-30"
+          className="absolute inset-0 h-full w-full object-cover opacity-50"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/40 to-background/80" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/20 to-background/60" />
 
         <div className="relative z-10 text-left">
           <h2 className="text-4xl font-semibold tracking-tight text-foreground sm:text-5xl lg:text-6xl">
@@ -304,9 +304,9 @@ function Index() {
           height={1200}
           loading="lazy"
           decoding="async"
-          className="absolute inset-0 h-full w-full object-cover opacity-20"
+          className="absolute inset-0 h-full w-full object-cover opacity-40"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/40 to-background/80" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/20 to-background/60" />
 
         <div className="relative z-10 text-left">
           <h2 className="text-4xl font-semibold tracking-tight text-foreground sm:text-5xl lg:text-6xl">
@@ -381,9 +381,9 @@ function Index() {
           height={1200}
           loading="lazy"
           decoding="async"
-          className="absolute inset-0 h-full w-full object-cover opacity-25"
+          className="absolute inset-0 h-full w-full object-cover opacity-45"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-card/70 via-card/40 to-card/70" />
+        <div className="absolute inset-0 bg-gradient-to-b from-card/50 via-card/20 to-card/50" />
 
         <div className="relative z-10 mx-auto max-w-2xl">
           <h2 className="text-3xl font-semibold tracking-tight text-foreground sm:text-4xl lg:text-5xl">
