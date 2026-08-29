@@ -9,8 +9,8 @@ import {
   Mail,
 } from "lucide-react";
 
-import heroWaves from "@/assets/hero-waves.jpg";
-import phone from "@/assets/phone.png";
+import heroWaves from "@/assets/hero-waves.webp";
+import phone from "@/assets/phone.webp";
 
 export const Route = createFileRoute("/")({
   head: () => ({
