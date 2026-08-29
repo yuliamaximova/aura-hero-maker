@@ -244,6 +244,8 @@ function Index() {
           aria-hidden
           width={1920}
           height={1200}
+          loading="lazy"
+          decoding="async"
           className="absolute inset-0 h-full w-full object-cover opacity-30"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/40 to-background/80" />
