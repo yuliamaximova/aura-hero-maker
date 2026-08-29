@@ -248,23 +248,25 @@ function Index() {
           </h2>
         </div>
 
-        <div className="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:mt-14 lg:grid-cols-4">
+        <div className="mt-10 grid grid-cols-1 gap-x-5 gap-y-5 sm:grid-cols-2 lg:mt-14 lg:grid-cols-4 lg:grid-rows-[auto_1fr_auto] lg:gap-y-0">
           {services.map((service) => (
             <article
               key={service.id}
-              className="group flex flex-col rounded-3xl border border-border bg-card/80 p-6 shadow-sm backdrop-blur-sm transition-all hover:-translate-y-1 hover:shadow-md sm:p-7"
+              className="group flex flex-col rounded-3xl border border-border bg-card/80 p-6 shadow-sm backdrop-blur-sm transition-all hover:-translate-y-1 hover:shadow-md sm:p-7 lg:grid lg:grid-rows-subgrid lg:row-span-3"
             >
-              <div
-                className={`grid h-12 w-12 shrink-0 place-items-center rounded-2xl text-xl ${service.accent}`}
-              >
-                {service.icon}
+              <div>
+                <div
+                  className={`grid h-12 w-12 shrink-0 place-items-center rounded-2xl text-xl ${service.accent}`}
+                >
+                  {service.icon}
+                </div>
+
+                <h3 className="mt-5 text-xl font-semibold tracking-tight text-foreground">
+                  {service.title}
+                </h3>
               </div>
 
-              <h3 className="mt-5 text-xl font-semibold tracking-tight text-foreground">
-                {service.title}
-              </h3>
-
-              <p className="mt-3 flex-grow text-sm leading-relaxed text-muted-foreground sm:text-base">
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground sm:text-base">
                 {service.description}
               </p>
 
