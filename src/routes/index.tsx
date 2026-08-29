@@ -162,6 +162,8 @@ function Index() {
               alt="Мобильное приложение, созданное с помощью вайбкодинга"
               width={800}
               height={1100}
+              fetchPriority="high"
+              decoding="async"
               className="w-64 max-w-full mix-blend-multiply drop-shadow-2xl sm:w-80 lg:w-[26rem]"
             />
           </div>
