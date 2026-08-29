@@ -116,6 +116,8 @@ function Index() {
           aria-hidden
           width={1920}
           height={1200}
+          fetchPriority="high"
+          decoding="async"
           className="absolute inset-0 h-full w-full object-cover"
         />
 
