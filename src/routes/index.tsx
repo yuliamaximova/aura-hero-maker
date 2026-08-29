@@ -302,6 +302,8 @@ function Index() {
           aria-hidden
           width={1920}
           height={1200}
+          loading="lazy"
+          decoding="async"
           className="absolute inset-0 h-full w-full object-cover opacity-20"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/40 to-background/80" />
@@ -377,6 +379,8 @@ function Index() {
           aria-hidden
           width={1920}
           height={1200}
+          loading="lazy"
+          decoding="async"
           className="absolute inset-0 h-full w-full object-cover opacity-25"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-card/70 via-card/40 to-card/70" />
