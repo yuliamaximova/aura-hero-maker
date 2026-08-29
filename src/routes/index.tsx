@@ -248,11 +248,11 @@ function Index() {
           </h2>
         </div>
 
-        <div className="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:mt-14 lg:grid-cols-4 lg:items-stretch">
+        <div className="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:mt-14 lg:grid-cols-4">
           {services.map((service) => (
             <article
               key={service.id}
-              className="group flex h-full flex-col rounded-3xl border border-border bg-card/80 p-6 shadow-sm backdrop-blur-sm transition-all hover:-translate-y-1 hover:shadow-md sm:p-7"
+              className="group flex flex-col rounded-3xl border border-border bg-card/80 p-6 shadow-sm backdrop-blur-sm transition-all hover:-translate-y-1 hover:shadow-md sm:p-7"
             >
               <div
                 className={`grid h-12 w-12 shrink-0 place-items-center rounded-2xl text-xl ${service.accent}`}
@@ -264,7 +264,7 @@ function Index() {
                 {service.title}
               </h3>
 
-              <p className="mt-3 flex-1 text-sm leading-relaxed text-muted-foreground sm:text-base">
+              <p className="mt-3 flex-grow text-sm leading-relaxed text-muted-foreground sm:text-base">
                 {service.description}
               </p>
 
