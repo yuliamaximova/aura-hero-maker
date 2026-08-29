@@ -9,8 +9,8 @@ import {
   Mail,
 } from "lucide-react";
 
-import heroWaves from "@/assets/hero-waves.jpg";
-import phone from "@/assets/phone.png";
+import heroWaves from "@/assets/hero-waves.webp";
+import phone from "@/assets/phone.webp";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -116,6 +116,8 @@ function Index() {
           aria-hidden
           width={1920}
           height={1200}
+          fetchPriority="high"
+          decoding="async"
           className="absolute inset-0 h-full w-full object-cover"
         />
 
@@ -160,6 +162,8 @@ function Index() {
               alt="Мобильное приложение, созданное с помощью вайбкодинга"
               width={800}
               height={1100}
+              fetchPriority="high"
+              decoding="async"
               className="w-64 max-w-full mix-blend-multiply drop-shadow-2xl sm:w-80 lg:w-[26rem]"
             />
           </div>
@@ -177,6 +181,8 @@ function Index() {
           aria-hidden
           width={1920}
           height={1200}
+          loading="lazy"
+          decoding="async"
           className="absolute inset-0 h-full w-full object-cover opacity-30"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/40 to-background/80" />
@@ -238,6 +244,8 @@ function Index() {
           aria-hidden
           width={1920}
           height={1200}
+          loading="lazy"
+          decoding="async"
           className="absolute inset-0 h-full w-full object-cover opacity-30"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/40 to-background/80" />
@@ -294,6 +302,8 @@ function Index() {
           aria-hidden
           width={1920}
           height={1200}
+          loading="lazy"
+          decoding="async"
           className="absolute inset-0 h-full w-full object-cover opacity-20"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/40 to-background/80" />
@@ -369,6 +379,8 @@ function Index() {
           aria-hidden
           width={1920}
           height={1200}
+          loading="lazy"
+          decoding="async"
           className="absolute inset-0 h-full w-full object-cover opacity-25"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-card/70 via-card/40 to-card/70" />
