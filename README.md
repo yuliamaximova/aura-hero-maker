@@ -18,7 +18,7 @@
 
 This project was built with [Lovable](https://lovable.dev).
 
-**Live app**: https://aura-hero-maker.lovable.app
+**Live app**: https://aurayulia.vercel.app
 
 ## Build with Lovable
 
